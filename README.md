@@ -1,4 +1,4 @@
-workspace-misc
+vimrc
 ==============
 
-Workspace miscellanea
+Vim settings file
