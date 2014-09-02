@@ -5,10 +5,10 @@
 """
 """ Author: Andrea Picciau
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+    	
 " Tabs
-set shiftwidth=3 tabstop=3
-set expandtab
+set shiftwidth=4
+set softtabstop=4
 
 " Color scheme
 colorscheme evening
@@ -17,4 +17,4 @@ colorscheme evening
 set cindent
 
 " Page width
-set tw=85
+set textwidth=85
