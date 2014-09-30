@@ -14,9 +14,6 @@ set softtabstop=4
 " Color scheme
 colorscheme evening
 
-" Indentation
-set cindent
-
 " Page width
 set textwidth=85
 
