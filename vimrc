@@ -15,7 +15,7 @@ set softtabstop=4
 colorscheme evening
 
 " Page width
-" set textwidth=85
+set textwidth=130
 
 " Using C syntax highlighting for OpenCL kernels
 syntax on
