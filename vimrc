@@ -9,6 +9,9 @@
 " Color scheme
 colorscheme evening
 
+" Set line numbers
+set nu
+
 " Page width
 set textwidth=130
 
