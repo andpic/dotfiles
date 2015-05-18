@@ -17,3 +17,8 @@ set textwidth=130
 syntax on
 filetype on
 au BufNewFile,BufRead *.cl set filetype=c
+
+" If I am using the gui, the working directory should be the same as the file.
+if has('gui_running')
+    lcd %:p:h
+endif
