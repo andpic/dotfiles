@@ -8,15 +8,18 @@
 colorscheme evening
 
 " Set line numbers
-set nu
+set      nu
 
 " Page width
-set textwidth=130
+set      textwidth=130
 
 " Using C syntax highlighting for OpenCL kernels
-syntax on
+syntax   on
 filetype on
-au BufNewFile,BufRead *.cl set filetype=c
+autocmd  BufNewFile,BufRead     *.cl set filetype=c
+
+" If we are working on a MATLAB file, change the behaviour of tabs
+autocmd  BufRead,BufNewFile     *.m  set shiftwidth=3 tabstop=3 expandtab
 
 " If I am using the gui, the working directory should be the same as the file.
 if has('gui_running')
