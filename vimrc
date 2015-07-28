@@ -5,7 +5,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     	
 " Color scheme
-colorscheme evening
+highlight Normal guibg=black guifg=white
+set background=dark
 
 " Set line numbers
 set nu
