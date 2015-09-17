@@ -13,6 +13,7 @@ set      nu
 
 " Page width
 set      textwidth=130
+set	 nowrap
 
 " Using C syntax highlighting for OpenCL kernels
 syntax   on
