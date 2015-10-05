@@ -1,4 +1,0 @@
-vimrc
-==============
-
-Vim settings file
