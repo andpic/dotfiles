@@ -1,1 +1,1 @@
-set gfn=Ubuntu\ Mono\ 12
+set gfn=Ubuntu\ Mono\ 13
