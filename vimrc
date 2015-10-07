@@ -3,6 +3,12 @@
 """
 """ Author: Andrea Picciau
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-commentary'
+Plug 'ctrlpvim/ctrlp.vim'
+call plug#end()
     	
 " Color scheme
 highlight 	Normal guibg=black guifg=white
