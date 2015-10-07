@@ -10,6 +10,7 @@ if [[ ! -f vimrc ]]; then
 	exit -1
 fi
 
+rm ~/.vim && ln -s $(pwd)/vim ~/.vim
 ln -sf $(pwd)/vimrc 	~/.vimrc
 ln -sf $(pwd)/gvimrc 	~/.gvimrc
 ln -sf $(pwd)/gnuplot 	~/.gnuplot
