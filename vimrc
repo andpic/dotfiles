@@ -15,6 +15,9 @@ set      nu
 set      textwidth=130
 set	 nowrap
 
+" Enable the mouse
+set 	 mouse=a
+
 " Using C syntax highlighting for OpenCL kernels
 syntax   on
 filetype on
