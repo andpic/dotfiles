@@ -5,11 +5,11 @@
 
 set -e
 
-if [[ ! -f vimrc ]]; then
+if [[ ! -f ./vimrc ]]; then
 	echo "Run this script from the 'dotfiles' directory"
 	exit -1
 fi
 
-ln -sf $(pwd)/vimrc 	~/.vimrc
-ln -sf $(pwd)/gvimrc 	~/.gvimrc
-ln -sf $(pwd)/gnuplot 	~/.gnuplot
+ln -sf $(pwd)/vimrc 		~/.vimrc
+ln -sf $(pwd)/gnuplot 		~/.gnuplot
+ln -sf $(pwd)/vim.desktop 	~/.local/share/applications/vim.desktop
