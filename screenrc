@@ -1,0 +1,14 @@
+#####################################################################################
+# screnrc
+#
+# Author: Andrea Picciau <a.picciau13@imperial.ac.uk
+#####################################################################################
+
+# Deactivate the startup message
+startup_message off
+
+# Detach on hangout
+autodetach on
+
+# Increase scroll-back buffer
+defscrollback 30000
