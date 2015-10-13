@@ -12,5 +12,9 @@ fi
 
 ln -sf $(pwd)/vimrc 		~/.vimrc
 ln -sf $(pwd)/gnuplot 		~/.gnuplot
-ln -sf $(pwd)/vim.desktop 	~/.local/share/applications/vim.desktop
 ln -sf $(pwd)/screenrc 		~/.screenrc
+
+# Changes specific to Ubuntu
+if grep 'ubuntu' /proc/version; then 
+	ln -sf $(pwd)/vim.desktop 	~/.local/share/applications/vim.desktop
+fi
