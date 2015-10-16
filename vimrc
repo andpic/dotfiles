@@ -21,4 +21,4 @@ filetype on
 autocmd  BufNewFile,BufRead     *.cl set filetype=c
 
 " If we are working on a MATLAB file, change the behaviour of tabs
-autocmd  BufRead,BufNewFile     *.m  set shiftwidth=3 tabstop=3 expandtab
+autocmd  BufRead,BufNewFile     *.m  set shiftwidth=4 tabstop=4 expandtab
