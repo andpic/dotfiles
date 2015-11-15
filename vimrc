@@ -9,11 +9,22 @@ highlight 	Normal guibg=black guifg=white
 set 		background=dark
 
 " Set line numbers
-set      nu
+set  nu
 
 " Page width
-set      textwidth=130
+set  textwidth=130
 set	 nowrap
+
+" Expand tabs to 3 spaces
+let _curfile = expand("%:t")
+if _curfile =~ "Makefile" || _curfile =~ "makefile" || _curfile =~ ".*\.mk"
+   set noexpandtab
+else
+   set expandtab
+   set tabstop=3
+   set shiftwidth=3
+endif
+
 
 " Using C syntax highlighting for OpenCL kernels
 syntax   on
