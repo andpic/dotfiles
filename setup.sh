@@ -10,8 +10,9 @@ if [[ ! -f ./vimrc ]]; then
 	exit -1
 fi
 
-ln -sf $(pwd)/vimrc 		~/.vimrc
+ln -sf $(pwd)/vimrc 		   ~/.vimrc
 ln -sf $(pwd)/gnuplot 		~/.gnuplot
+ln -sf $(pwd)/gdbinit 		~/.gdbinit
 ln -sf $(pwd)/screenrc 		~/.screenrc
 
 # Changes specific to Ubuntu
