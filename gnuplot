@@ -26,4 +26,5 @@ PAL_C_5 = "'#2c3e50'"
 # Custom terminals
 SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18' enhanced lw 1.5 rounded"
 SVG = "set term svg size 700,525 font 'CMU Sans serif, 18' enhanced lw 1.5 rounded background rgb 'white'"
+WXT = "set term wxt font 'CMU Sans serif, 14' enhanced"
 
