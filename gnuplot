@@ -28,3 +28,9 @@ SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18' enhance
 SVG = "set term svg size 700,525 font 'CMU Sans serif, 18' enhanced lw 1.5 rounded background rgb 'white'"
 WXT = "set term wxt font 'CMU Sans serif, 14' enhanced"
 
+TICS_DEFAULTS = "set encoding utf8;                            \
+                 set format y '%2.0s·10^{%S}';                 \
+                 set format x '%2.0s·10^{%S}';                 \
+                 set xtics rotate by 45 right offset 0,-0.5;   \
+                 set xtics add ('0' 0);                        \
+                 set ytics add ('0' 0);"
