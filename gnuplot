@@ -29,8 +29,12 @@ SVG = "set term svg size 700,525 font 'CMU Sans serif, 18' enhanced dashed lw 1.
 WXT = "set term wxt font 'CMU Sans serif, 14' enhanced"
 
 TICS_DEFAULTS = "set encoding utf8;                            \
-                 set format y '%2.0s·10^{%S}';                 \
-                 set format x '%2.0s·10^{%S}';                 \
+                 set format y '%3.2s·10^{%S}';                 \
+                 set format x '%3.2s·10^{%S}';                 \
                  set xtics rotate by 45 right offset 0,-0.5;   \
-                 set xtics add ('0' 0);                        \
-                 set ytics add ('0' 0);"
+                 set xlabel offset 0,1;                        \
+                 set ylabel offset 3,0;"
+
+TICS_DEFAULTS_FIX_0 =  "@TICS_DEFAULTS                         \
+                       set xtics add ('0' 0);                  \
+                       set ytics add ('0' 0);"
