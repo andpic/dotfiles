@@ -1,35 +1,46 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" .vimrc
-"""
-""" Author: Andrea Picciau
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" .vimrc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     	
-" Color scheme
-highlight 	Normal guibg=black guifg=white
-set 		background=dark
-
-" Set line numbers
-set  nu
-
-" Page width
-set  textwidth=130
-set	 nowrap
-
-" Expand tabs to 3 spaces
-let _curfile = expand("%:t")
-if _curfile =~ "Makefile" || _curfile =~ "makefile" || _curfile =~ ".*\.mk"
-   set noexpandtab
-else
-   set expandtab
-   set tabstop=3
-   set shiftwidth=3
-endif
-
-
-" Using C syntax highlighting for OpenCL kernels
 syntax   on
 filetype on
-autocmd  BufNewFile,BufRead     *.cl set filetype=c
 
-" If we are working on a MATLAB file, change the behaviour of tabs
-autocmd  BufRead,BufNewFile     *.m  set shiftwidth=4 tabstop=4 expandtab
+
+" Color scheme
+colorscheme   ron
+
+" Set line numbers
+set nu
+
+" Page width
+set textwidth=100
+set nowrap
+
+" Expand tabs to 3 spaces
+set expandtab
+set shiftwidth=3 tabstop=3
+
+" Settings for OpenCL kernels
+autocmd  BufNewFile,BufRead     *.cl      setlocal filetype=c
+
+" Settings for MATLAB source files
+autocmd  BufRead,BufNewFile     *.m       setlocal shiftwidth=4 tabstop=4
+
+" Settings for Makefiles
+autocmd  BufRead,BufNewFile     Makefile  setlocal noexpandtab
+
+" Display colorschemes
+function! DisplayColorSchemes()
+   let currDir = getcwd()
+   exec "cd $VIMRUNTIME/colors"
+   for myCol in split(glob("*"), '\n')
+      if myCol =~ '\.vim'
+         let mycol = substitute(myCol, '\.vim', '', '')
+         exec "colorscheme " . mycol
+         exec "redraw!"
+         echo "colorscheme = ". myCol
+         sleep 2
+      endif
+   endfor
+   exec "cd " . currDir
+endfunction
