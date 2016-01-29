@@ -29,18 +29,6 @@ autocmd  BufRead,BufNewFile     *.m       setlocal shiftwidth=4 tabstop=4
 " Settings for Makefiles
 autocmd  BufRead,BufNewFile     Makefile  setlocal noexpandtab
 
-" Display colorschemes
-function! DisplayColorSchemes()
-   let currDir = getcwd()
-   exec "cd $VIMRUNTIME/colors"
-   for myCol in split(glob("*"), '\n')
-      if myCol =~ '\.vim'
-         let mycol = substitute(myCol, '\.vim', '', '')
-         exec "colorscheme " . mycol
-         exec "redraw!"
-         echo "colorscheme = ". myCol
-         sleep 2
-      endif
-   endfor
-   exec "cd " . currDir
-endfunction
+" Configure statusline
+set statusline+=%F
+set laststatus=2
