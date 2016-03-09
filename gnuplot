@@ -32,6 +32,12 @@ GRY_C_2 = "rgb '#636363'"
 GRY_C_3 = "rgb '#bdbdbd'"
 
 
+SFE_C_1 = "rgb '#e66101'"
+SFE_C_2 = "rgb '#fdb863'"
+SFE_C_3 = "rgb '#b2abd2'"
+SFE_C_4 = "rgb '#5e3c99'"
+
+
 # Custom terminals
 SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18'     \
                     dashed enhanced lw 1.5 rounded;"
