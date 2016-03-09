@@ -54,5 +54,11 @@ XTICS_ENGINEERING_0 = "set encoding utf8;               \
 
 XTICS_ROTATE        = "set xtics rotate by 45 right offset 0,-0.5;"
 
-XTICS_FIX_0         = "set xtics add ('0' 0);"
-YTICS_FIX_0         = "set ytics add ('0' 0);"
+XTICS_FIX         = "set xtics add ('0' 0);             \
+                     set xtics add ('1' 1);             \
+                     set xtics add ('10' 10);           \
+                     set xtics add ('100' 100);"
+YTICS_FIX         = "set ytics add ('0' 0);             \
+                     set ytics add ('1' 1);             \
+                     set ytics add ('10' 10);           \
+                     set ytics add ('100' 100);"
