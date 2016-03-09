@@ -27,6 +27,10 @@ PAL_C_3 = "rgb '#ecfc5c'"
 PAL_C_4 = "rgb '#2175c9'"
 PAL_C_5 = "rgb '#2c3e50'"
 
+GRY_C_1 = "rgb '#000000'"
+GRY_C_2 = "rgb '#636363'"
+GRY_C_3 = "rgb '#bdbdbd'"
+
 
 # Custom terminals
 SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18'     \
