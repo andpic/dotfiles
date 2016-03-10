@@ -27,15 +27,25 @@ PAL_C_3 = "rgb '#ecfc5c'"
 PAL_C_4 = "rgb '#2175c9'"
 PAL_C_5 = "rgb '#2c3e50'"
 
+SEQ_C_1 = "rgb '#fef0d9'" 
+SEQ_C_2 = "rgb '#fdcc8a'"
+SEQ_C_3 = "rgb '#fc8d59'"
+SEQ_C_4 = "rgb '#d7301f'"
+
+DIV_C_1 = "rgb '#e66101'"
+DIV_C_3 = "rgb '#fdb863'"
+DIV_C_4 = "rgb '#b2abd2'"
+DIV_C_2 = "rgb '#5e3c99'"
+
+QLT_C_1 = "rgb '#e41a1c'"
+QLT_C_2 = "rgb '#377eb8'"
+QLT_C_3 = "rgb '#4daf4a'"
+QLT_C_4 = "rgb '#984ea3'"
+QLT_C_5 = "rgb '#ff7f00'"
+
 GRY_C_1 = "rgb '#000000'"
 GRY_C_2 = "rgb '#636363'"
 GRY_C_3 = "rgb '#bdbdbd'"
-
-
-SFE_C_1 = "rgb '#e66101'"
-SFE_C_2 = "rgb '#fdb863'"
-SFE_C_3 = "rgb '#b2abd2'"
-SFE_C_4 = "rgb '#5e3c99'"
 
 
 # Custom terminals
