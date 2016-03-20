@@ -48,6 +48,13 @@ GRY_C_2 = "rgb '#636363'"
 GRY_C_3 = "rgb '#bdbdbd'"
 
 
+# Linespoint types
+CAT_1 = "pt 7  ps 0.75  lt -1 lw 1.5 lc @QLT_C_1"
+CAT_2 = "pt 9  ps 0.75  lt 0  lw 1.5 lc @QLT_C_2"
+CAT_3 = "pt 13 ps 0.75  lt 5  lw 1.5 lc @QLT_C_3"
+CAT_4 = "pt 5  ps 0.75  lt 4  lw 1.5 lc @QLT_C_4"
+
+
 # Custom terminals
 SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18'     \
                     dashed enhanced lw 1.5 rounded;"
