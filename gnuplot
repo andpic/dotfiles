@@ -64,6 +64,9 @@ SVG              = "set term svg size 700,525 font 'CMU Sans serif, 18'      \
 
 WXT              = "set term wxt font 'CMU Sans serif, 14' enhanced"
 
+PNG              = "set term png size 700,525 font 'CMU Sans serif, 18' \
+                    enhanced lw 2 rounded background rgb 'white'
+
 
 # UTF8 dot character
 DOT = "'·'"
