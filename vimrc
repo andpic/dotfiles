@@ -17,7 +17,8 @@ colorscheme   ron
 set nu
 
 " Line wrapping
-set wrap linebreak nolist
+set textwidth=100
+set nowrap
 
 " Expand tabs to 3 spaces
 set expandtab
@@ -25,9 +26,6 @@ set shiftwidth=3 tabstop=3
 
 " Settings for OpenCL kernels
 autocmd  BufNewFile,BufRead     *.cl      setlocal filetype=c
-
-" Settings for OpenCL kernels
-autocmd  BufNewFile,BufRead     *.tex     setlocal tw=100
 
 " Settings for MATLAB source files
 autocmd  BufRead,BufNewFile     *.m       setlocal shiftwidth=4 tabstop=4
