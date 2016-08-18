@@ -16,6 +16,12 @@ ln -sf $(pwd)/gnuplot 		~/.gnuplot
 ln -sf $(pwd)/gdbinit 		~/.gdbinit
 ln -sf $(pwd)/screenrc 		~/.screenrc
 
+# Install 
+if [ ! -f ~/.vim/autoload/plug.vim ]; then
+   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
 # Changes specific to Ubuntu
 if grep -q 'ubuntu' /proc/version; then 
 	ln -sf $(pwd)/vim.desktop 	~/.local/share/applications/vim.desktop

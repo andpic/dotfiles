@@ -3,4 +3,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set guifont=Ubuntu\ Mono\ 12
-colorscheme koehler    	
+colorscheme evening

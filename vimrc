@@ -1,7 +1,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " .vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    	
+
+" Loading plugins
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/goyo.vim'
+call plug#end()
+
 syntax   on
 filetype on
 
@@ -9,28 +14,33 @@ filetype on
 " Color scheme
 colorscheme   ron
 
+
 " Set line numbers
 set nu
 
-" Page width
-set textwidth=100
-set nowrap
+
+" Line wrapping
+set wrap linebreak nolist
+
 
 " Expand tabs to 3 spaces
 set expandtab
 set shiftwidth=3 tabstop=3
 
+
 " Settings for OpenCL kernels
 autocmd  BufNewFile,BufRead     *.cl      setlocal filetype=c
+
 
 " Settings for MATLAB source files
 autocmd  BufRead,BufNewFile     *.m       setlocal shiftwidth=4 tabstop=4
 
+
 " Settings for Makefiles
 autocmd  BufRead,BufNewFile     Makefile  setlocal noexpandtab
 
+
 " Configure statusline
-" set statusline+=%F
 set laststatus=2
 set statusline=%F                               "tail of the filename
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
