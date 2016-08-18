@@ -11,6 +11,7 @@ if [[ ! -f ./vimrc ]]; then
 fi
 
 ln -sf $(pwd)/vimrc 		   ~/.vimrc
+ln -sf $(pwd)/gvimrc 		~/.gvimrc
 ln -sf $(pwd)/gnuplot 		~/.gnuplot
 ln -sf $(pwd)/gdbinit 		~/.gdbinit
 ln -sf $(pwd)/screenrc 		~/.screenrc

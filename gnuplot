@@ -73,6 +73,9 @@ DOT = "'·'"
 
 
 # xtics and ytics
+YTICS_SIMPLE        = "set format y '%3.0se%S';"
+XTICS_SIMPLE        = "set format x '%3.0se%S';"
+
 YTICS_ENGINEERING   = "set encoding utf8;               \
                        set format y '%3.2s·10^{%S}';"
 XTICS_ENGINEERING   = "set encoding utf8;               \
