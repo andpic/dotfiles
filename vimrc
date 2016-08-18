@@ -10,35 +10,30 @@ call plug#end()
 syntax   on
 filetype on
 
-
 " Color scheme
 colorscheme   ron
-
 
 " Set line numbers
 set nu
 
-
 " Line wrapping
 set wrap linebreak nolist
-
 
 " Expand tabs to 3 spaces
 set expandtab
 set shiftwidth=3 tabstop=3
 
-
 " Settings for OpenCL kernels
 autocmd  BufNewFile,BufRead     *.cl      setlocal filetype=c
 
+" Settings for OpenCL kernels
+autocmd  BufNewFile,BufRead     *.tex     setlocal tw=100
 
 " Settings for MATLAB source files
 autocmd  BufRead,BufNewFile     *.m       setlocal shiftwidth=4 tabstop=4
 
-
 " Settings for Makefiles
 autocmd  BufRead,BufNewFile     Makefile  setlocal noexpandtab
-
 
 " Configure statusline
 set laststatus=2
