@@ -59,7 +59,11 @@ CAT_5 = "pt 11 ps 0.75  lt 2  lw 1.5 lc @QLT_C_5"
 # Custom terminals
 SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18'     \
                     dashed enhanced lw 1.5 rounded;"
+
 SVG              = "set term svg size 700,525 font 'CMU Sans serif, 18'      \
+                    enhanced dashed lw 1.5 rounded background rgb 'white';"
+
+SVG_LARGE        = "set term svg size 933,700 font 'CMU Sans serif, 18'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white';"
 
 WXT              = "set term wxt font 'CMU Sans serif, 14' enhanced"
