@@ -57,26 +57,20 @@ CAT_5 = "pt 11 ps 0.75  lt 2  lw 1.5 lc @QLT_C_5"
 
 
 # Custom terminals
-SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18'     \
-                    dashed enhanced lw 1.5 rounded;                          \
-                    set lmargin 0; set rmargin 0; set tmargin 0; set bmargin 0;"
+SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18'"
 
 SVG              = "set term svg size 700,525 font 'CMU Sans serif, 18'      \
-                    enhanced dashed lw 1.5 rounded background rgb 'white';   \
-                    set lmargin 0; set rmargin 0; set tmargin 0; set bmargin 0;"
+                    enhanced dashed lw 1.5 rounded background rgb 'white'"
 
 SVG_LARGE        = "set term svg size 933,700 font 'CMU Sans serif, 24'      \
-                    enhanced dashed lw 1.5 rounded background rgb 'white';   \
-                    set lmargin 0; set rmargin 0; set tmargin 0; set bmargin 0;"
+                    enhanced dashed lw 1.5 rounded background rgb 'white'"
 
 WXT              = "set term wxt font 'CMU Sans serif, 14' enhanced"
 
 QT               = "set term qt font 'CMU Sans serif, 14' enhanced"
 
 PNG              = "set term png size 700,525 font 'CMU Sans serif, 18'      \
-                    enhanced lw 2 rounded background rgb 'white';            \
-                    set lmargin 0; set rmargin 0; set tmargin 0; set bmargin 0;"
-
+                    enhanced lw 2 rounded background rgb 'white'"
 
 # UTF8 dot character
 DOT = "'·'"
@@ -102,7 +96,7 @@ FIX_XTICS_0         = "set xtics add ('0' 0);    "
 FIX_XTICS_1         = "set xtics add ('1' 1);    "
 FIX_XTICS_10        = "set xtics add ('10' 10);  "
 FIX_XTICS_100       = "set xtics add ('100' 100);"
-FIY_YTICS_0         = "set ytics add ('0' 0);    "
-FIY_YTICS_1         = "set ytics add ('1' 1);    "
-FIY_YTICS_10        = "set ytics add ('10' 10);  "
-FIY_YTICS_100       = "set ytics add ('100' 100);"
+FIX_YTICS_0         = "set ytics add ('0' 0);    "
+FIX_YTICS_1         = "set ytics add ('1' 1);    "
+FIX_YTICS_10        = "set ytics add ('10' 10);  "
+FIX_YTICS_100       = "set ytics add ('100' 100);"
