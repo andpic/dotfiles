@@ -62,6 +62,9 @@ SVG_PRESENTATION = "set term svg size 700,525 font 'CMU Bright Bold, 18'"
 SVG              = "set term svg size 700,525 font 'CMU Sans serif, 18'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white'"
 
+SVG_SMALL        = "set term svg size 700,445 font 'CMU Sans serif, 23'      \
+                    enhanced dashed lw 1.5 rounded background rgb 'white'"
+
 SVG_LARGE        = "set term svg size 933,700 font 'CMU Sans serif, 24'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white'"
 
