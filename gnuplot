@@ -61,7 +61,7 @@ CAT_5 = "pt 11 ps 0.75  lt 2  lw 1.5 lc @QLT_C_5"
 SVG              = "set term svg size 700,525 font 'CMU Sans serif, 18'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white'"
 
-SVG_SMALL        = "set term svg size 700,445 font 'CMU Sans serif, 23'      \
+SVG_SMALL        = "set term svg size 700,445 font 'CMU Sans serif, 24'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white'"
 
 SVG_LARGE        = "set term svg size 933,700 font 'CMU Sans serif, 24'      \
