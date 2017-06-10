@@ -66,6 +66,8 @@ SVG_SMALL        = "set term svg size 700,445 font 'CMU Sans serif, 24'      \
 
 SVG_LARGE        = "set term svg size 933,700 font 'CMU Sans serif, 24'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white'"
+SVG_LARGE_HALF   = "set term svg size 450,350 font 'CMU Sans serif, 24'      \
+                    enhanced dashed lw 1.5 rounded background rgb 'white'"
 
 # This should be imported with a width of 24cm for the text to equivalent 
 # to size 22 in LibreOffice after executing
