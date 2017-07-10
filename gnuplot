@@ -56,16 +56,21 @@ CAT_4 = "pt 5  ps 0.75  lt 4  lw 1.5 lc @QLT_C_4"
 CAT_5 = "pt 11 ps 0.75  lt 2  lw 1.5 lc @QLT_C_5"
 
 
-# Custom terminals
-
-SVG              = "set term svg size 700,525 font 'CMU Sans serif, 18'      \
+# With these settings, the font is of the correct size (small) as it should be
+# 933pt = 329mm when converted to PDF ===> \columnwidth
+SVG_LARGE        = "set term svg size 933,700 font 'CMU Sans serif, 24'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white'"
 
-SVG_SMALL        = "set term svg size 700,445 font 'CMU Sans serif, 24'      \
+# Looks nice on paper. It might have to be trimmed afterwards.
+GOOD_RATIO_LARGE = "set size ratio 0.539"
+
+# Dimensions for half a page-wide figure
+# 447pt = 159mm when converted to PDF ===> .48\columnwidth
+SVG_SMALL        = "set term svg size 450,350 font 'CMU Sans serif, 24'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white'"
 
-SVG_LARGE        = "set term svg size 933,700 font 'CMU Sans serif, 20'      \
-                    enhanced dashed lw 1.5 rounded background rgb 'white'"
+# Looks nice on paper. It might have to be trimmed afterwards.
+GOOD_RATIO_SMALL = "set size ratio 0.778"
 
 # This should be imported with a width of 24cm for the text to equivalent 
 # to size 22 in LibreOffice after executing
@@ -86,28 +91,6 @@ PNG              = "set term png size 700,525 font 'CMU Sans serif, 18'      \
 # UTF8 dot character
 DOT = "'·'"
 
-
 # xtics and ytics
-YTICS_SIMPLE        = "set format y '%3.0se%S';"
-XTICS_SIMPLE        = "set format x '%3.0se%S';"
-
-YTICS_ENGINEERING   = "set encoding utf8;               \
-                       set format y '%3.2s·10^{%S}';"
-XTICS_ENGINEERING   = "set encoding utf8;               \
-                       set format x '%3.2s·10^{%S}';"
-
-YTICS_ENGINEERING_0 = "set encoding utf8;               \
-                       set format y '%3.0s·10^{%S}';"
-XTICS_ENGINEERING_0 = "set encoding utf8;               \
-                       set format x '%3.0s·10^{%S}';"
-
-XTICS_ROTATE        = "set xtics rotate by 45 right offset 0,-0.5;"
-
-FIX_XTICS_0         = "set xtics add ('0' 0);    "
-FIX_XTICS_1         = "set xtics add ('1' 1);    "
-FIX_XTICS_10        = "set xtics add ('10' 10);  "
-FIX_XTICS_100       = "set xtics add ('100' 100);"
-FIX_YTICS_0         = "set ytics add ('0' 0);    "
-FIX_YTICS_1         = "set ytics add ('1' 1);    "
-FIX_YTICS_10        = "set ytics add ('10' 10);  "
-FIX_YTICS_100       = "set ytics add ('100' 100);"
+YTICS_LOGSTYLE   = "set format y '10^{%L}';"
+XTICS_LOGSTYLE   = "set format x '10^{%L}';"
