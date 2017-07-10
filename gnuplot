@@ -68,8 +68,6 @@ GOOD_RATIO_LARGE = "set size ratio 0.539"
 # 447pt = 159mm when converted to PDF ===> .48\columnwidth
 SVG_SMALL        = "set term svg size 450,350 font 'CMU Sans serif, 24'      \
                     enhanced dashed lw 1.5 rounded background rgb 'white'"
-SVG_LARGE_HALF   = "set term svg size 450,350 font 'CMU Sans serif, 24'      \
-                    enhanced dashed lw 1.5 rounded background rgb 'white'"
 
 # Looks nice on paper. It might have to be trimmed afterwards.
 GOOD_RATIO_SMALL = "set size ratio 0.778"
