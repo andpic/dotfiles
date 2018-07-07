@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=;
+Comment=Edit file in gVim
+Exec=gvim --remote-tab-silent %f
+GenericName=Process Viewer
+Hidden=false
+Icon=gvim
+Name=gVim
+Terminal=true
+Type=Application
+Version=1.0

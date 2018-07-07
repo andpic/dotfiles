@@ -19,4 +19,5 @@ ln -sf $(pwd)/screenrc 		~/.screenrc
 # Changes specific to Ubuntu
 if grep -q 'ubuntu' /proc/version; then 
 	ln -sf $(pwd)/vim.desktop 	~/.local/share/applications/vim.desktop
+	ln -sf $(pwd)/gvim.desktop ~/.local/share/applications/gvim.desktop
 fi

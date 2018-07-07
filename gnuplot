@@ -63,6 +63,7 @@ SVG_LARGE        = "set term svg size 933,700 font 'CMU Sans serif, 24'      \
 
 # Looks nice on paper. It might have to be trimmed afterwards.
 GOOD_RATIO_LARGE = "set size ratio 0.539"
+GOOD_RATIO_LARGE_SQUARE = "set size square 0.817"
 
 # Dimensions for half a page-wide figure
 # 447pt = 159mm when converted to PDF ===> .48\columnwidth
